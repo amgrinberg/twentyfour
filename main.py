@@ -22,6 +22,9 @@ def times(x, y):
 
 
 def main(numbers):
+    '''
+    Leave comments, ya dope.
+    '''
     numbers = [int(i) for i in numbers]
     functions = [plus, minus, dividedby, times]
     function_combinations = [f for f in itertools.product(functions, repeat=3)]
