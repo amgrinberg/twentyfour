@@ -26,7 +26,7 @@ def main(numbers):
     functions = [plus, minus, dividedby, times]
     function_combinations = [f for f in itertools.product(functions, repeat=3)]
 
-    combinations = set([i for i in itertools.permutations(numbers)])
+    combinations = set(i for i in itertools.permutations(numbers))
 
     answers = []
     for a, b, c, d in combinations:
